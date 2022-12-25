@@ -1,6 +1,6 @@
 // import express
 const express = require("express");
-const router = require("./api/routes.js");
+const router = require("./routes/api.js");
 
 // membuat object express
 const app = express();
@@ -30,7 +30,7 @@ const app = express();
 
 // Menggunakan middleware
 app.use(express.json());
-app.use(express.urlencoded());
+// app.use(express.urlencoded());
 
 // Menggunakan routing (router)
 app.use(router)
